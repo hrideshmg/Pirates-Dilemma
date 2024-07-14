@@ -29,27 +29,29 @@ Create a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) app using P
      - `-h, --match-by-hash`: Match subtitles by [movie hash](https://trac.opensubtitles.org/projects/opensubtitles/wiki/HashSourceCodes).
      - `-b, --batch-download`: Enable batch mode (read further down for details).
 
-3. **Find IMDb ID/Hash**
-   - Extract the IMDb ID or hash of the given movie.
+3. **Find IMDb ID and Hash/Filesize**
+   - Find the IMDb ID of the given filename
+   - Depending on the options specified find the hash and filesize as well
 
-4. **Scrape Subtitles**
+5. **Scrape Subtitles**
    - Use `beautifulsoup4` to scrape [opensubtitles](https://www.opensubtitles.org/en/search/subs) and get the list of subtitles.
    - Follow these guidelines:
-     - Search using the IMDb ID or movie hash.
+     - Search using the IMDb ID and movie hash/file size (bonus points if you can come up with an algorithm to search using a selection of the three to maximise the chances of getting a result)
      - Apply the specified filters.
      - Sort the results by "Downloaded" in descending order.
 
-5. **Download Subtitles**
-   - Prompt the user to choose a subtitle and download it.
+6. **Download Subtitles**
+   - List all the subtitles available for the given movie
+   - Prompt the user to choose one and download it.
 
-6. **Batch Mode**
+7. **Batch Mode**
    - If batch mode is enabled, a directory should be specified instead of a single file.
-   - Automatically download subtitles for all movies within the specified directory.
+   - Automatically download subtitles for all movies within the specified directory instead of listing and prompting.
 
-7. **User Interface**
+8. **User Interface**
    - Provide a clean user interface with loading indicators and basic error handling.
 
-8. **Validation**
+9. **Validation**
    - Test the app to ensure it works by using this [movie file](https://archive.org/download/plan-9-from-outer-space/plan-9-from-outer-space.mpeg4).
 
 
