@@ -53,7 +53,7 @@ Create a [CLI](https://en.wikipedia.org/wiki/Command-line_interface) app using P
 
 9. **Validation**
    - Test the app to ensure it works by using this [movie file](https://archive.org/download/plan-9-from-outer-space/plan-9-from-outer-space.mpeg4).
-   - Note that you might not get results when searching using the movie hash or file byte size, this is normal whats important is that your implementation of the two make sense
+   - Note that you might not get results when searching using the movie hash or file byte size, this is normal. Whats important is that your implementation of the two make sense.
 
 
 ## **Resources**
